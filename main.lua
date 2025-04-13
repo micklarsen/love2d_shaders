@@ -2,7 +2,6 @@
 
 local Pipboi = require "src.Pipboi"
 
-local pipboi
 local myShader
 
 function love.load()
