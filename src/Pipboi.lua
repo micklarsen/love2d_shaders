@@ -13,8 +13,8 @@ function Pipboi:new(x, y)
     self.direction = 1 -- 1 = right, -1 = left
 end
 
-function Pipboi:update(dt)
 
+function Pipboi:update(dt)
     self.x = self.x + self.speed * self.direction * dt
 
     -- Switch direction if past target or start
@@ -26,6 +26,7 @@ function Pipboi:update(dt)
         self.direction = 1
     end
 end
+
 
 function Pipboi:draw()
     love.graphics.draw(self.image, self.x, self.y, 0, 0.2, 0.2)
