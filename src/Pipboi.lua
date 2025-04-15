@@ -30,6 +30,7 @@ end
 
 function Pipboi:draw()
     love.graphics.draw(self.image, self.x, self.y, 0, 0.2, 0.2)
+    love.graphics.print("I'm affected by the shader!", self.x, self.y + (self.image:getHeight() * 0.2) )
 end
 
 return Pipboi
